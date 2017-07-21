@@ -5,9 +5,7 @@ import FooterClass from '../components/FooterClass';
 
 
 class Register extends React.Component{
-  pushthebutton(){
-    
-  }
+
   render(){
     return(
       <div className="container">
@@ -22,23 +20,23 @@ class Register extends React.Component{
           <main className="content">
             <div className="regcontent">
               <h1>Registration page</h1>
-              <form action = "" >
+              <form name="myForm" action = "/#/userinfo">
                 <label htmlFor="user">Username:  </label>
                 <br/>
-                <input type="text" name="Username" id="user" className="user"/>
+                <input type="text" name="Username" id="user" className="user" required />
                 <br/>
 
                 <label htmlFor="pass">Password:  </label>
                 <br/>
-                <input type="password" name="password" id="pass" className="pass"/>
+                <input type="password" name="password" id="pass" className="pass" required />
                 <br/>
 
                 <label htmlFor="pass2">Repeat your password:  </label>
                 <br/>
-                <input type="password" name="password2" id="pass2" className="pass2"/>
+                <input type="password" name="password2" id="pass2" className="pass2"  required/>
                 <br/>
-
-                <button  onclick="pushthebutton()" type="submit" className="myButton">Register!</button>
+                
+                <button type="submit" className="myButton">Register!</button>
               </form>
             </div>
           </main>

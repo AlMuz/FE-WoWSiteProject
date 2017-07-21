@@ -4,6 +4,7 @@ import {Router, Route, Link, IndexRoute, hashHistory } from 'react-router';
 import Main from './pages/main';
 import Err from './pages/error';
 import Register from './pages/Register';
+import Userinfo from './pages/Userinfo';
 
 class Warcraft extends React.Component{
   render() {
@@ -11,6 +12,7 @@ class Warcraft extends React.Component{
       <Router history={hashHistory}>
         <Route path='/' component={Main} />
         <Route path='/register' component={Register} />
+        <Route path='/userinfo' component={Userinfo} />
         <Route path='/*' component={Err} />
       </Router>
     );

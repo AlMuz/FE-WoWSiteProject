@@ -1,11 +1,10 @@
 import React from 'react';
 import Navbar from '../components/navbar';
-
 import FooterClass from '../components/FooterClass';
 
 
 
-class Err extends React.Component{
+class Userinfo extends React.Component{
   render(){
     return(
       <div className="container">
@@ -17,12 +16,9 @@ class Err extends React.Component{
         </nav>
 
         <main className="content">
-          <div className="errcontent">
-            <h1>
-              Page not found error
-              <br/>
-              ERROR 404
-            </h1>
+          <div className="regcontent">
+            <p></p>
+
           </div>
         </main>
         <FooterClass/>
@@ -31,4 +27,4 @@ class Err extends React.Component{
   }
 }
 
-export default Err;
+export default Userinfo;
