@@ -16,10 +16,13 @@ class Like extends React.Component{
   }
   render(){
     return(
-      <div>
-        <button onClick={this.disLike.bind(this)}>-</button>
-        <p>{this.state.likes}</p>
-        <button onClick={this.addLike.bind(this)}>+</button>
+      <div className="forlike">
+        <h1>Rate this news please!</h1>
+        <ul>
+          <li><button onClick={this.disLike.bind(this)}>-</button></li>
+          <li><p>{this.state.likes}</p></li>
+          <li><button onClick={this.addLike.bind(this)}>+</button></li>
+        </ul>
       </div>
 
     );
