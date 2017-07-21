@@ -9,12 +9,17 @@ class Main extends React.Component{
   render(){
     return(
       <div className="container">
+        {/* Header dont need this, because logo is in navigation bar
+        */}
         <header className="header"></header>
         <nav className="navigation">
           <Navbar />
         </nav>
+
         <main className="content">
+          {/* This is video, which is after navigation */}
           <VideoClass/>
+          {/* With this class can show news using props */}
           <Maincontent name='A Method in the Madness'
             text='On June 24-25, esports legends went head-to-head in the third cup of the WoW Arena World Championships. Eight teams, ten epic matches, and a thirst for tournament glory.
             Before the broadcast was live, storylines had already begun. Champions of the previous cup BOYZZ were nowhere to be seen after an earthshock-ing result at the hands of Æerø die Maschine.'
@@ -28,7 +33,6 @@ class Main extends React.Component{
           <Maincontent name='This Month in WoW: July'
             text='July starts off in Azeroth with bursts of flying color throughout the capital cities as the Midsummer Fire Festival comes to a close. While the holiday may be ending, the work within the Tomb of Sargeras continues this month as raiders continue to plumb its danger-filled depths. But, don’t worry. It won’t all be serious business when the main auction houses in Orgrimmar and Stormwind set up Azeroth’s biggest dance parties.'
           />
-
         </main>
         <FooterClass/>
       </div>
